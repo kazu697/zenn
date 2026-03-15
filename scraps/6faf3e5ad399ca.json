@@ -1,0 +1,19 @@
+{
+  "title": "GitHub Actionsの知識",
+  "closed": false,
+  "archived": false,
+  "created_at": "2023-12-08",
+  "comments": [
+    {
+      "author": "kazu697",
+      "created_at": "2023-12-08",
+      "body_markdown": "PRを作成したときにベースブランチとヘッドブランチの差分のあるファイルのファイル名を取得する方法\n```sh\ngit diff --diff-filter=AM --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}\n```"
+    },
+    {
+      "author": "kazu697",
+      "created_at": "2023-12-08",
+      "body_markdown": "デバッグをしたいときには下記のシークレットを挿入する\n`ACTIONS_STEP_DEBUG` = `true`\nechoコマンドでデバッグができる\n```\necho \"::debug:: github.event.pull_request.base.ref: ${{ github.event.pull_request.base.ref }}\"\n```",
+      "body_updated_at": "2023-12-08"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "VSCodeの自分設定",
+  "closed": false,
+  "archived": false,
+  "created_at": "2025-01-14",
+  "comments": [
+    {
+      "author": "kazu697",
+      "created_at": "2025-01-14",
+      "body_markdown": "Typescriptの変数名の変更でF2ボタンを押して、変数名を変更する場合にエイリアスを用いて変数名が変更されてしまうので下記の設定を加えることでエイリアスをつけないで現在の変数名を書き換えることができる。\n```\n{\n    \"typescript.preferences.useAliasesForRenames\": false\n}\n```"
+    }
+  ]
+}
